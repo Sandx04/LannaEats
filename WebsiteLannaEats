@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanna Eats - ลำแต๊ ๆ แบบล้านนา</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #F8F5EE;
+            color: #262220;
+        }
+        .editorial-font {
+            font-family: 'Playfair Display', serif;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8F5EE;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4C5B9;
+        }
+    </style>
+</head>
+<body class="selection:bg-stone-800 selection:text-white antialiased">
+
+    <header class="sticky top-0 z-50 bg-[#F8F5EE]/90 backdrop-blur-md border-b border-[#E6DDD0]">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <a href="#" class="editorial-font text-2xl sm:text-3xl font-bold tracking-wider uppercase text-[#262220]">Lanna Eats</a>
+            <nav class="hidden md:flex items-center space-x-10 text-xs uppercase tracking-[0.25em] font-medium text-[#262220]">
+                <a href="#hero" class="hover:text-stone-500 transition">Home</a>
+                <a href="#about" class="hover:text-stone-500 transition">About</a>
+                <a href="#menu" class="hover:text-stone-500 transition">Menu</a>
+                <a href="#contact" class="hover:text-stone-500 transition">Contact</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none text-[#262220]">
+                ☰
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#F8F5EE] border-b border-[#E6DDD0] px-6 py-6 space-y-4 text-xs uppercase tracking-[0.2em] font-medium">
+            <a href="#hero" class="block hover:text-stone-500">Home</a>
+            <a href="#about" class="block hover:text-stone-500">About</a>
+            <a href="#menu" class="block hover:text-stone-500">Menu</a>
+            <a href="#contact" class="block hover:text-stone-500">Contact</a>
+        </div>
+    </header>
+
+    <section id="hero" class="max-w-7xl mx-auto px-6 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <div class="lg:col-span-8 relative bg-[#EDE6D6] p-8 sm:p-16 border border-[#E2D6C3] shadow-sm flex flex-col justify-between overflow-hidden min-h-[500px] sm:min-h-[580px]">
+            <div class="absolute inset-0 bg-cover bg-center opacity-20 pointer-events-none" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80')"></div>
+            
+            <div class="relative z-10">
+                <span class="text-[11px] uppercase tracking-[0.3em] text-stone-600 font-semibold block mb-4">Authentic Northern Thai Cuisine</span>
+                <h1 class="editorial-font text-5xl sm:text-7xl font-normal leading-[1.1] tracking-tight text-[#262220] mb-6">
+                    ลำแต๊ ๆ <br><span class="italic font-light text-stone-700">แบบล้านนา</span>
+                </h1>
+            </div>
+
+            <div class="relative z-10 max-w-lg bg-[#F8F5EE]/90 backdrop-blur-sm p-6 sm:p-8 border border-[#E2D6C3]">
+                <p class="text-stone-700 font-light leading-relaxed mb-6 text-sm sm:text-base">
+                    สัมผัสรสชาติดั้งเดิมของอาหารเหนือแท้ ๆ ปรุงด้วยวัตถุดิบคุณภาพ คัดสรรเครื่องเทศและสมุนไพรสดใหม่ สืบสานตำนานความอร่อยในบรรยากาศอบอุ่นร่วมสมัย
+                </p>
+                <a href="#menu" class="inline-flex items-center gap-2 border-b border-[#262220] pb-1 text-xs uppercase tracking-[0.2em] font-medium hover:text-stone-600 hover:border-stone-600 transition">
+                    Explore Menu &rarr;
+                </a>
+            </div>
+        </div>
+
+        <div class="lg:col-span-4 min-h-[400px] lg:min-h-full relative overflow-hidden border border-[#E2D6C3]">
+            <img src="https://lh7-us.googleusercontent.com/2GeFicgpRkKTM0c54CVwttVCgdKCKWx_tUeT8W_w-lmSqtmleKkWgeDxTF_So5_W1H47mTUB9KcpGjJl_0Cb7W1W_cTFBfsJ__RPqaB3yYBHPNjU2CTHWuOdZbMrSClFLed_iDc_vujXDpIeCy1OPkI" alt="Northern Thai Dish" class="w-full h-full object-cover grayscale-[10%] hover:scale-105 transition duration-700">
+        </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto px-6 py-16 border-t border-[#E6DDD0]">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-[11px] uppercase tracking-[0.3em] text-stone-600 font-semibold block mb-2">Areas of Focus</span>
+                <h2 class="editorial-font text-3xl sm:text-5xl font-normal text-[#262220]">Culinary Story & Philosophy</h2>
+            </div>
+            <p class="text-stone-600 font-light text-sm italic mt-4 md:mt-0">
+                Where texture, light, and appetite converge.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="relative group overflow-hidden h-[500px] border border-[#E2D6C3]">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gHZTnvWHxYs42MRpBSRJhDkR6IeQK1oeMFOy2LQfkyHtzDqmkbTFZgA&s=10" alt="Signature Noodles" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-x-6 bottom-6 bg-[#F8F5EE]/95 backdrop-blur-md p-6 border border-[#E2D6C3]">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 block mb-1">01 / Specialties</span>
+                    <h3 class="editorial-font text-xl font-normal text-[#262220] mb-2">Signature Noodles</h3>
+                    <p class="text-xs text-stone-600 font-light italic">Rich coconut broths and authentic northern noodle recipes.</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden h-[500px] border border-[#E2D6C3]">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVU9qWvW6ccktPcnM7wDWxMPZ7LnSFxpH_Nrjph_rogg2cbo7weDXGW70&s=10" alt="Herbal Appetizers" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-x-6 bottom-6 bg-[#F8F5EE]/95 backdrop-blur-md p-6 border border-[#E2D6C3]">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 block mb-1">02 / Tradition</span>
+                    <h3 class="editorial-font text-xl font-normal text-[#262220] mb-2">Herbal Appetizers</h3>
+                    <p class="text-xs text-stone-600 font-light italic">Fragrant herbs, spices, and traditional grilled sausages.</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden h-[500px] border border-[#E2D6C3]">
+                <img src="https://benothailand.com/cdn/shop/articles/Iced_thai_milk_tea_in_glass_9c10e268-b2bd-4406-a25f-e27d39f03d92.jpg?v=1780021592" alt="Refreshments" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-x-6 bottom-6 bg-[#F8F5EE]/95 backdrop-blur-md p-6 border border-[#E2D6C3]">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 block mb-1">03 / Refresh</span>
+                    <h3 class="editorial-font text-xl font-normal text-[#262220] mb-2">Refreshing Drinks</h3>
+                    <p class="text-xs text-stone-600 font-light italic">Cool herbal teas and fresh juices to complement your meal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="max-w-7xl mx-auto px-6 py-20 border-t border-[#E6DDD0]">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-[11px] uppercase tracking-[0.3em] text-stone-600 font-semibold block mb-2">Catalog</span>
+                <h2 class="editorial-font text-3xl sm:text-5xl font-normal text-[#262220]">Our Menu</h2>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-6 md:mt-0 text-xs uppercase tracking-wider">
+                <button onclick="filterMenu('all')" class="filter-btn px-5 py-2.5 bg-[#262220] text-white transition font-medium" data-filter="all">All Items</button>
+                <button onclick="filterMenu('noodle')" class="filter-btn px-5 py-2.5 bg-[#EDE6D6] text-[#262220] border border-[#E2D6C3] transition font-medium hover:bg-[#262220] hover:text-white" data-filter="noodle">Noodles</button>
+                <button onclick="filterMenu('side')" class="filter-btn px-5 py-2.5 bg-[#EDE6D6] text-[#262220] border border-[#E2D6C3] transition font-medium hover:bg-[#262220] hover:text-white" data-filter="side">Sides</button>
+                <button onclick="filterMenu('drink')" class="filter-btn px-5 py-2.5 bg-[#EDE6D6] text-[#262220] border border-[#E2D6C3] transition font-medium hover:bg-[#262220] hover:text-white" data-filter="drink">Drinks</button>
+            </div>
+        </div>
+
+        <div id="menu-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Populated dynamically by JavaScript -->
+        </div>
+    </section>
+
+    <section id="contact" class="bg-[#EDE6D6] border-t border-[#E2D6C3] py-20 mt-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-[11px] uppercase tracking-[0.3em] text-stone-600 font-semibold block mb-2">Get in Touch</span>
+                <h2 class="editorial-font text-3xl sm:text-4xl font-normal text-[#262220] mb-6">Contact & Location</h2>
+                <p class="text-stone-700 font-light mb-8 leading-relaxed text-sm sm:text-base">
+                    แวะมาสัมผัสความลำแต๊ ๆ แบบล้านนาได้ที่ร้าน Lanna Eats หรือติดต่อสอบถามสำรองโต๊ะและสั่งอาหารเดลิเวอรีได้ตามช่องทางด้านล่างนี้
+                </p>
+                <div class="space-y-4 text-sm font-light text-stone-800">
+                    <p class="flex items-center border-b border-[#E2D6C3] pb-3"><strong class="w-32 text-[#262220] font-medium uppercase text-xs tracking-widest">ชื่อร้าน:</strong> Lanna Eats (ลานนา อีทส์)</p>
+                    <p class="flex items-center border-b border-[#E2D6C3] pb-3"><strong class="w-32 text-[#262220] font-medium uppercase text-xs tracking-widest">เบอร์โทรศัพท์:</strong> 053-123-456, 089-987-6543</p>
+                    <p class="flex items-center border-b border-[#E2D6C3] pb-3"><strong class="w-32 text-[#262220] font-medium uppercase text-xs tracking-widest">Line Official:</strong> @lannaeats</p>
+                    <p class="flex items-center border-b border-[#E2D6C3] pb-3"><strong class="w-32 text-[#262220] font-medium uppercase text-xs tracking-widest">Facebook:</strong> Lanna Eats - ลำแต๊ ๆ</p>
+                    <p class="flex items-start"><strong class="w-32 text-[#262220] font-medium uppercase text-xs tracking-widest pt-1">ที่อยู่:</strong> 99/9 ถ.นิมมานเหมินท์ ตำบลสุเทพ อำเภอเมือง จังหวัดเชียงใหม่ 50200</p>
+                </div>
+            </div>
+            <div class="h-[400px] border border-[#E2D6C3] bg-[#E2D6C3] relative overflow-hidden shadow-sm">
+                <iframe 
+                    class="w-full h-full grayscale-[50%] hover:grayscale-0 transition duration-700 border-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.840742511453!2d98.9680!3d18.7961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDQ3JzQ2LjAiTiA5OMKwNTgnMDQuOCJF!5e0!3m2!1sth!2sth!4v1620000000000!5m2!1sth!2sth" 
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#262220] text-[#F8F5EE] py-8 text-center text-xs tracking-[0.25em] uppercase">
+        <p>&copy; 2026 Lanna Eats. All Rights Reserved. ลำแต๊ ๆ แบบล้านนา</p>
+    </footer>
+
+    <script>
+        const menuData = [
+            { id: 'M01', name_th: 'ข้าวซอยไก่', name_en: 'Khao Soi Chicken', category: 'noodle', price: 69, image: 'https://cms.dmpcdn.com/food/2026/06/17/0ae04580-6a1a-11f1-a37a-d34e3a67f5f3_webp_original.webp' },
+            { id: 'M02', name_th: 'ข้าวซอยเนื้อ', name_en: 'Khao Soi Beef', category: 'noodle', price: 79, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqa12QbbstHQuMcBuAA8v7i_YbOaE__m2gMWfCwytoon2IFjwws9RW4A&s=10' },
+            { id: 'M03', name_th: 'ข้าวซอยเจ', name_en: 'Khao Soi Vegan', category: 'noodle', price: 69, image: 'https://img.wongnai.com/p/1920x0/2018/08/25/2aba113df6e34174a7cdb92d72c14f7b.jpg' },
+            { id: 'M04', name_th: 'ไส้อั่ว', name_en: 'Sai Ua Sausage', category: 'side', price: 49, image: 'https://cheewajit.com/app/uploads/2021/03/%E0%B9%84%E0%B8%AA%E0%B9%89%E0%B8%AD%E0%B8%B1%E0%B9%88%E0%B8%A7-%E0%B8%88%E0%B8%B1%E0%B8%95%E0%B8%B8%E0%B8%A3%E0%B8%B1%E0%B8%AA%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%81%E0%B9%89-1024x1024.jpg' },
+            { id: 'M05', name_th: 'แคบหมู', name_en: 'Pork Crackling', category: 'side', price: 39, image: 'https://api2.krua.co/wp-content/uploads/2023/05/Image_613x300-11.jpg' },
+            { id: 'M06', name_th: 'ข้าวซอยทะเล', name_en: 'Khao Soi Seafood', category: 'noodle', price: 99, image: 'https://www.ryoiireview.com/upload/article/202410/1729072959_fe5df232cafa4c4e0f1a0294418e5660.jpg' },
+            { id: 'M07', name_th: 'ชาเย็น', name_en: 'Thai Iced Tea', category: 'drink', price: 29, image: 'https://benothailand.com/cdn/shop/articles/Iced_thai_milk_tea_in_glass_9c10e268-b2bd-4406-a25f-e27d39f03d92.jpg?v=1780021592' },
+            { id: 'M08', name_th: 'น้ำส้ม', name_en: 'Orange Juice', category: 'drink', price: 35, image: 'https://www.joolzjuice.com/wp-content/uploads/2023/07/%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AA%E0%B9%89%E0%B8%A1.jpg' },
+            { id: 'M09', name_th: 'ขนมจีนน้ำเงี้ยว', name_en: 'Khanom Jeen Nam Ngiao', category: 'noodle', price: 59, image: 'https://i0.wp.com/archives.mju.ac.th/localfood/wp-content/uploads/2025/04/%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B8%88%E0%B8%B5%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%80%E0%B8%87%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%A71.png?fit=500%2C500&ssl=1' },
+            { id: 'M10', name_th: 'ข้าวเหนียว', name_en: 'Sticky Rice', category: 'side', price: 15, image: 'https://www.1376delivery.com/productimages/7036_-.jpg' }
+        ];
+
+        function renderMenu(filter = 'all') {
+            const grid = document.getElementById('menu-grid');
+            grid.innerHTML = '';
+            
+            const filtered = filter === 'all' ? menuData : menuData.filter(item => item.category === filter);
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'group bg-[#EDE6D6] border border-[#E2D6C3] overflow-hidden flex flex-col justify-between transition hover:-translate-y-1.5 duration-300 shadow-sm';
+                card.innerHTML = `
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="${item.image}" alt="${item.name_th}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="this.src='https://placehold.co/600x400/262220/ffffff?text=${encodeURIComponent(item.name_th)}'">
+                        <span class="absolute top-4 right-4 bg-[#F8F5EE]/95 px-3 py-1 text-xs uppercase tracking-widest font-medium border border-[#E2D6C3] text-[#262220]">฿${item.price}</span>
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-600 font-semibold block mb-1">${item.category} • ${item.id}</span>
+                            <h3 class="editorial-font text-2xl font-normal text-[#262220] mb-1">${item.name_th}</h3>
+                            <p class="text-xs text-stone-600 font-light italic mb-4">${item.name_en}</p>
+                        </div>
+                        <div class="pt-4 border-t border-[#E2D6C3] flex justify-between items-center text-xs tracking-wider uppercase font-medium">
+                            <span class="text-stone-500">Lanna Recipe</span>
+                            <span class="text-[#262220] font-semibold">฿${item.price}.00</span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterMenu(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if(btn.getAttribute('data-filter') === category) {
+                    btn.className = 'filter-btn px-5 py-2.5 bg-[#262220] text-white transition font-medium';
+                } else {
+                    btn.className = 'filter-btn px-5 py-2.5 bg-[#EDE6D6] text-[#262220] border border-[#E2D6C3] transition font-medium hover:bg-[#262220] hover:text-white';
+                }
+            });
+            renderMenu(category);
+        }
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        window.onload = () => {
+            renderMenu('all');
+        };
+    </script>
+</body>
+</html>
+
